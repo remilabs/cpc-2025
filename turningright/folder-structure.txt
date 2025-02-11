@@ -1,0 +1,20 @@
+Problemname
+	Data
+		Sample
+			1.in
+			1.ans
+		Secret
+			1.in
+			1.ans
+	Problem.md
+		Need sections for problem statement, input format, output format, constraints
+	Submissions
+		Accepted
+			lwb_approach_1.cpp
+			lwb_approach_1.py
+			lwb_pproach_2.cpp, etc
+		Time_limit_exceeded
+			time_limit_exceeded.cpp
+		Wrong_answer
+			wrong_answer.py
+
