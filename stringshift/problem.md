@@ -15,7 +15,7 @@ The first line contains the string to be shifted S.
 
 The second line contains the number of operations to be performed N.
 
-The following lines contain the operations, denoted by an `l` or `r` character, followed by a space, followed by an integer representing the number of times to shift that direction.
+The following lines contain the operations, denoted by an `l` or `r` character, followed by a space, followed by an integer F representing the number of times to shift that direction.
 
 For instance, the following input:
 
@@ -39,5 +39,6 @@ Output a single line containing the shifted string.
 
 ## Constraints
 
-0 < |S| < 1,000,000
-0 < N < 10,000,000
+0 < |S| < 100,000
+0 < N < 100,000
+0 < F < 100,000
