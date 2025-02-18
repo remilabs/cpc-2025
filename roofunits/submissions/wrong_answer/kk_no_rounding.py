@@ -18,9 +18,9 @@ for _ in range(n):
         x, _ = line.split("/")
         x = int(x)
         deg = rise_run_to_deg(x)
-        print(f"{deg:.1f}")
+        print(f"{deg}")
     # degrees
     else:
         x = float(line)
         rise = deg_to_rise_run(x)
-        print(f"{int(rise)}/12")
+        print(f"{rise}/12")
