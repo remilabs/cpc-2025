@@ -1,2 +1,4 @@
+import math
+
 h = float(input())
-print(round(h) + 5)
+print(math.ceil(h) + 5)
