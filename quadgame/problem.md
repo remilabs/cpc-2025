@@ -12,8 +12,6 @@ Your task is to write a program that determines the smallest possible perimeter 
 
 ## Input Format
 
-The first line of input will contain one integer, N, the number of rods.
-
 - The first line contains a single integer N, the number of rods.
 - The second line contains N space-separated integers representing the lengths of the rods.
   - The first two integers correspond to the rods that form the initial right angle.

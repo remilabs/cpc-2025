@@ -3,11 +3,11 @@
 Chuck the roofer has to convert between lots of different units during his day job. One example is the different ways his crew measures how steep a roof is. There are two main methods for doing this in Chucks crew.
 
 1. Use a measuring tool to get the angle of the roof off of horizontal in degrees (e.g. 15 degrees off horizontal)
-2. Use a measuring tool to find how much the roof rises over 12 inches of horizontal run
+2. Use a measuring tool to find how much the roof rises over 12 inches of horizontal run (e.g. 5 inches of rise for 12 inches of run)
 
 This second method is expressed in the form X/12 where X is the height the roof rises in inches over 12 inches of horizontal run.
 
-Chuck needs to convert from one form to the other in order to coordinate between his crews
+Chuck needs to convert from one form to the other in order to coordinate between his crews.
 
 ## Input Format
 
@@ -61,4 +61,4 @@ For pitch measurements in degrees:
 
 For pitch measurements in rise/run (X/12):
 
-0 <= X <=10^5
+0 <= X <=1000
