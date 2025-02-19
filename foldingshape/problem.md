@@ -16,4 +16,4 @@ Output a single integer -- the minimum number of folds to get from dimensions (H
 
 ## Constraints
 
-1 <= W,H,W2,H2 <= 1,000,000
+1 <= W,H,W2,H2 <= 10,000,000
