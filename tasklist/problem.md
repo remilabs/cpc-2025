@@ -20,8 +20,8 @@ Output a single integer, which is the minimum time it will take to complete all 
 
 ## Constraints
 
-0 < N <= 10_000
-0 <= M <= 10_000
+0 < N <= 100_000
+0 <= M <= 500_000
 
 Each task has an integer time that satisfies
 
