@@ -1,21 +1,21 @@
 n, m = map(int, input().split())
 
-t = {i: int(input()) for i in range(n)}
-g = {i: [] for i in range(n)}
+task_times = {i: int(input()) for i in range(n)}
+task_graph = {i: [] for i in range(n)}
 is_sink = {i: True for i in range(n)}
 
 for _ in range(m):
     ai, bi = map(int, input().split())
-    g[bi].append(ai)
+    task_graph[bi].append(ai)
     is_sink[ai] = False
 
 
 def dfs(v, total):
-    if len(g[v]) == 0:
-        return t[v]
+    if len(task_graph[v]) == 0:
+        return task_times[v]
     path_totals = []
-    for c in g[v]:
-        pt = dfs(c, total) + t[v]
+    for c in task_graph[v]:
+        pt = dfs(c, total) + task_times[v]
         path_totals.append(pt)
     return max(path_totals)
 
