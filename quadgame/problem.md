@@ -9,7 +9,6 @@ After a long day at work, Chuck decides to relax and play a single-player game t
 
 Your task is to write a program that determines the smallest possible perimeter of such a quadrilateral so that Chuck can check his answer.
 
-
 ## Input Format
 
 - The first line contains a single integer N, the number of rods.
@@ -24,4 +23,4 @@ Output a single integer, the smallest perimeter of a quadrilateral that can be f
 ## Constraints
 
 4 <= N <= 100,000
-Each rod will have a length greather than zero and no more than 100,000.
+Each rod will have a length greater than zero and no more than 100,000.
