@@ -1,18 +1,18 @@
 ## Problem Statement
 
-TODO: Add option to go from (w,h) -> (h,w).
+Bob has a large rectangular piece of roofing underlayment with dimmensions H x W. The roof he's working on requires dimensions H2 x W2. He realized too late that he forgot the necessary tools to cut the underlayment down to the correct dimensions, so his only option is to fold the piece until it fits.
 
-Given a large piece of roofing underlayment in rectangular shape with dimensions h x w, where h is the height and w is the width, fold the shape so its dimensions are h1 x w1 in the minimum number of moves. The rectangle can only be folded parallel to its edges, and after folding, the dimensions should be integers. 
+Bob is lazy and would like to know the minimum number of folds needed to get from dimensions H x W to H2 x W2. Since the roofing underlayment is rectangular, it's a valid option to rotate it 90 degrees before folding. For example if the original dimensions were given as 3 x 6, he may rotate the piece to 6 x 3 before folding. Rotating does not count as a fold. He can only fold the rectangle parallel to its edges, and after each fold, the dimensions must be integers.
 
 ## Input Format
 
-The first line of input will be 2 space-separated integers W and H, the original dimensions of the roofing underlayment.
+The first line of input will be 2 space-separated integers H and W, the original dimensions of the roofing underlayment.
 
-The second line of input will be 2 space-separated integers W2 and H2, the desired dimensions of the roofing underlayment.
+The second line of input will be 2 space-separated integers H2 and W2, the desired dimensions of the roofing underlayment.
 
 ## Output Format
 
-Output a single integer -- the minimum number of folds to get from dimensions (w,h) to (w2,h2). It is always possible to get the desired dimensions.
+Output a single integer -- the minimum number of folds to get from dimensions (H,W) to (H2,W2). It is always possible to get the desired dimensions.
 
 ## Constraints
 
