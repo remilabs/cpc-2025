@@ -1,3 +1,3 @@
 import math
 
-print(round(math.ceil(input()) + 5))
+print(round(math.ceil(float(input())) + 5))
