@@ -14,8 +14,7 @@ def solve():
         if w > ww:
             w = math.ceil(w / 2)
             count += 1
-        h = max(h, w)
-        w = min(h, w)
+        h, w = max(h, w), min(h, w)
     return count
 
 
