@@ -12,7 +12,7 @@ The next N lines each contain a single integer N<sub>i</sub>. Each integer repre
 
 The next line contains a single integer C. The next C lines each contain 2 space separated integers A and B where 0 <= A < N and 0 <= B < M. This represents a relationship where homeowner B is close enough to be serviced by contractor A.
 
-The next line contains a single integer H. The next H lines each contain 2 space separated integers A and B where 0 <= A < M and 0 <= B < N. This represents a relationship where homeowner A prefers work on their house to be done by contractor B. Only preferred contractors for each home are allowed to do work for them.
+The next line contains a single integer H. The next H lines each contain 2 space separated integers A and B where 0 <= A < M and 0 <= B < N. This represents a relationship where homeowner A prefers work on their house to be done by contractor B.
 
 ## Output Format
 
