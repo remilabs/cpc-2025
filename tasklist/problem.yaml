@@ -1,0 +1,6 @@
+name: tasklist
+author: remi
+license: cc by-sa
+
+limits:
+  memory: 2048

@@ -48,11 +48,9 @@ with open("dense.in", "w") as f:
         print(ai, bi, file=f)
 
 
-# Random
-# with open("random.in", "w") as f:
-#     print(N, M, file=f)
-#     for i in range(N):
-#         print(i % 100, file=f)
-#     for i in range(M):
-#         print(0, i, file=f)
-#         print(i, N - 1, file=f)
+with open("long.in", "w") as f:
+    print(N, N - 1, file=f)
+    for i in range(N):
+        print(i % 100, file=f)
+    for i in range(N - 1):
+        print(i, i + 1, file=f)

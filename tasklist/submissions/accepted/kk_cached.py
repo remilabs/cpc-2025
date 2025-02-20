@@ -1,4 +1,7 @@
-import functools
+# import functools
+import sys
+
+sys.setrecursionlimit(10**6)
 
 n, m = map(int, input().split())
 
@@ -12,15 +15,18 @@ for _ in range(m):
     is_sink[ai] = False
 
 
-# Simple caching for each call. Could do this with a dict manually as well
-@functools.lru_cache(None)
+cache = {}
+
+
 def dfs(v, total):
     if len(task_graph[v]) == 0:
         return task_times[v]
     path_totals = []
     for c in task_graph[v]:
-        pt = dfs(c, total) + task_times[v]
-        path_totals.append(pt)
+        if (c, total) not in cache:
+            pt = dfs(c, total)
+            cache[(c, total)] = pt
+        path_totals.append(cache[(c, total)] + task_times[v])
     return max(path_totals)
 
 
