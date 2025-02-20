@@ -11,6 +11,7 @@ RUN apt-get update && \
             libgmp10 \
             libgmpxx4ldbl \
             openjdk-8-jdk \
+            pypy3 \
             python3-minimal \
             python3-pip \
             python3-plastex \
