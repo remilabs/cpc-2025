@@ -1,7 +1,7 @@
 import sys
 
 n, m = map(int, input().split())
-sys.setrecursionlimit(10**5)
+sys.setrecursionlimit(10**6)
 
 task_times = {i: int(input()) for i in range(n)}
 task_graph = {i: [] for i in range(n)}

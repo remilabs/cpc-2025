@@ -1,4 +1,7 @@
 for path in ./*; do
-  [ ! -d path ] && continue
+  [ ! -d "$path" ] && continue
+  echo ">>>>>>>>>>>>>>> Running on $path"
   verifyproblem "$path"
+  echo
+  echo
 done
