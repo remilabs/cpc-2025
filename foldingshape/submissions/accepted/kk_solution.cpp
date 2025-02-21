@@ -2,6 +2,7 @@
 #include <cmath>
 #include <iostream>
 using namespace std;
+typedef long l;
 
 int main() {
   int h, w, hh, ww;
@@ -14,17 +15,13 @@ int main() {
   int count = 0;
   while (h > hh || w > ww) {
     if (h > hh) {
-      h = (int)ceil(h / 2);
+      h = ceil(h / 2.0);
       count++;
     }
     if (w > ww) {
-      w = (int)ceil(w / 2);
+      w = ceil(w / 2.0);
       count++;
     }
-    a = max(h, w);
-    b = min(h, w);
-    h = a;
-    w = b;
   }
   cout << count << endl;
   return 0;
