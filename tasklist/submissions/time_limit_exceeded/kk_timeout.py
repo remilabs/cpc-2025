@@ -13,12 +13,12 @@ for _ in range(m):
     is_sink[ai] = False
 
 
-def dfs(v, total):
+def dfs(v):
     if len(task_graph[v]) == 0:
         return task_times[v]
     path_totals = []
     for c in task_graph[v]:
-        pt = dfs(c, total) + task_times[v]
+        pt = dfs(c) + task_times[v]
         path_totals.append(pt)
     return max(path_totals)
 
@@ -26,6 +26,6 @@ def dfs(v, total):
 totals = []
 for i in range(n):
     if is_sink[i]:
-        totals.append(dfs(i, 0))
+        totals.append(dfs(i))
 
 print(max(totals))

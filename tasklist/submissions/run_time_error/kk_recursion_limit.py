@@ -16,21 +16,21 @@ for _ in range(m):
 cache = {}
 
 
-def dfs(v, total):
+def dfs(v):
     if len(task_graph[v]) == 0:
         return task_times[v]
     path_totals = []
     for c in task_graph[v]:
-        if (c, total) not in cache:
-            pt = dfs(c, total)
-            cache[(c, total)] = pt
-        path_totals.append(cache[(c, total)] + task_times[v])
+        if c not in cache:
+            pt = dfs(c)
+            cache[c] = pt
+        path_totals.append(cache[c] + task_times[v])
     return max(path_totals)
 
 
 totals = []
 for i in range(n):
     if is_sink[i]:
-        totals.append(dfs(i, 0))
+        totals.append(dfs(i))
 
 print(max(totals))
