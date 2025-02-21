@@ -40,5 +40,5 @@ Output a single line containing the shifted string.
 ## Constraints
 
 0 < |S| < 100,000
-0 < N < 100,000
+0 < N < 1,000,000
 0 < F < 100,000
