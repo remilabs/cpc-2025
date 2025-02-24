@@ -7,7 +7,11 @@ typedef long l;
 int main() {
   int h, w, hh, ww;
   cin >> h >> w >> hh >> ww;
-  int oh = h, ow = w;
+  int a = max(h, w), b = min(h, w), c = max(hh, ww), d = min(hh, ww);
+  h = a;
+  w = b;
+  hh = c;
+  ww = d;
   int count = 0;
   while (h > hh || w > ww) {
     if (h > hh) {
@@ -19,19 +23,6 @@ int main() {
       count++;
     }
   }
-  h = oh; w = ow;
-  swap(hh,ww);
-  int count2 = 0;
-  while (h > hh || w > ww) {
-    if (h > hh) {
-      h = ceil(h / 2.0);
-      count2++;
-    }
-    if (w > ww) {
-      w = ceil(w / 2.0);
-      count2++;
-    }
-  }
-  cout << min(count,count2) << endl;
+  cout << count << endl;
   return 0;
 }
