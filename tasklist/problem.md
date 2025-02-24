@@ -1,30 +1,28 @@
 ## Problem Statement
 
-Jane manages all the roofers in Grid City. To get the work done on someones roof, there are lots of tasks that need to be coordinated such as pulling permits or scheduling crew arrivals. Some of these tasks need to happen before others, but often Jane's team can work on more than one task at a time. She knows how long it takes her team to do each task (she's been doing this for a while), and she knows which tasks depend on which other tasks. She wants to know how long it will take to finish all the tasks if she is optimal about delegating the tasks out to her team. She can't start work on a task until all its dependencies are completed.
+Jane manages all the roofers in Grid City. Roofing projects require many separate tasks to be coordinated in the correct order relative to each other. For example, the task of "Obtain a permit" must be completed before the task "Schedule the work". She knows how long each task will take from start to completion, and she knows which tasks depend on which other tasks to be finished first.
+
+Jane's team is large, meaning that all of a project's unblocked tasks can be worked on concurrently. If all of a task's dependencies are completed, someone on the team will start working on the task. If a task does not depend on any other task, it can be started immediately. She wants to know how long it will take to complete a project, given that each task will be started as soon as its dependencies are completed, and each task will take as long as she estimates.
 
 ## Input Format
 
-The first line of input contains two integers N and M
-
-N is the number of tasks and M is the number of dependencies between tasks.
+The first line of input contains two space-separated integers, N and M, the number of tasks and the number of dependencies between tasks, respectively.
 
 The next N lines each contain a single integer T_i, the time it takes to complete task i.
 
-The next M lines each contain two integers A_i and B_i, which means that task A_i must be completed before task B_i can start.
+The next M lines each contain two space-separated integers A_i and B_i, where A_i must be completed before B_i is started.
 
 A_i and B_i are 0-indexed.
 
 ## Output Format
 
-Output a single integer, which is the minimum time it will take to complete all the tasks if Jane manages her team optimally.
+Output the time it will take to complete the given project as an integer.
 
 ## Constraints
 
 0 < N <= 100_000
 0 <= M <= 500_000
 
-Each task has an integer time that satisfies
+Each task has a positive integer time of less than 10,000.
 
-0 < T_i <= 10_000
-
-There will be no cycles in the graph of task dependencies.
+It will always be possible to complete a project, so no two tasks will depend on each other to be completed.
