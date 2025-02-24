@@ -5,9 +5,10 @@ After a long day at work, Chuck decides to relax and play a single-player game t
 - The quadrilateral must have at least two right angles, including the initial right angle formed by the first two rods.
 - The quadrilateral must have a positive area (i.e., it must be a valid, non-degenerate shape).
 - The perimeter of the quadrilateral must equal the sum of the lengths of the four rods used.
+- The quadrilateral must be a simple polygon, that is, it must not self-intersect or contain holes.
 - The object of Quad Game is to minimize this perimeter while satisfying all constraints.
 
-Your task is to write a program that determines the smallest possible perimeter of such a quadrilateral so that Chuck can check his answer.
+Your task is to write a program that finds the smallest possible perimeter of such a quadrilateral so that Chuck can check his answer.
 
 ## Input Format
 
