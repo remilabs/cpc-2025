@@ -3,7 +3,7 @@
 The following operations on a string are defined:
 
 - Left shift: A single circular rotation of the string where the first character moves to the end and all other characters shift one position to the left.
-- Right shift: Same as left shift, but the opposite direction.
+- Right shift: Same as left shift, but in the opposite direction.
 
 For example, the string "abcde" left-shifted would be "bcdea" and right-shifted would be "eabcd".
 
@@ -20,7 +20,7 @@ The following lines contain the operations, denoted by an `l` or `r` character, 
 For instance, the following input:
 
 ```
-roof construction is both a valuable skill and an enjoyable pasttime
+roof construction is both a valuable skill and an enjoyable pastime
 3
 r 2
 l 3
@@ -30,7 +30,7 @@ l 1
 would result in the following output:
 
 ```
-of construction is both a valuable skill and an enjoyable pasttimero
+of construction is both a valuable skill and an enjoyable pastimero
 ```
 
 ## Output Format
