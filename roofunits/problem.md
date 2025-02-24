@@ -1,27 +1,23 @@
 ## Problem Statement
 
-Chuck the roofer has to convert between lots of different units during his day job. One example is the different ways his crew measures how steep a roof is. There are two main methods for doing this in Chucks crew.
+Chuck the roofer has to convert between lots of different units during his day job. One example is how his crew measures how steep a roof is. There are two main methods for doing this in Chuck's crew.
 
 1. Use a measuring tool to get the angle of the roof off of horizontal in degrees (e.g. 15 degrees off horizontal)
 2. Use a measuring tool to find how much the roof rises over 12 inches of horizontal run (e.g. 5 inches of rise for 12 inches of run)
 
-This second method is expressed in the form X/12 where X is the height the roof rises in inches over 12 inches of horizontal run.
+This second method is expressed as X/12 where X is the height the roof rises in inches over 12 inches of horizontal run.
 
-Chuck needs to convert from one form to the other in order to coordinate between his crews.
+Chuck needs to convert from one form to the other to coordinate between his crews.
 
 ## Input Format
 
-The first line contains a number N which is the number of queries that you will process
+The first line contains an integer, N, which is the number of queries.
 
-The following N lines each contains a query that gives the pitch of the roof in one of the two units used
-
-- If the line contains a single floating point number x, it will be the pitch of the roof in degrees
-
-- If the line contains two integers separated by a slash (X/12), it will be the pitch of the roof in rise/run format
+The following N lines each contain either a single floating point number or a fraction, which is the query to process. If a query contains a slash ( / ), it is a fraction and needs to be converted to the number of degrees off of horizontal. Otherwise, it needs to be converted to the form X/12.
 
 ## Output Format
 
-For each query, convert the pitch to the other unit.
+For each query, output the converted pitch on a single line.
 
 For example, if the query looks like the following
 
@@ -49,7 +45,7 @@ You will output
 
 For degrees, round any floating point answers to the nearest tenth in your output
 
-For rise/run, truncate any floating point answers down to an integer
+For rise/run, truncate any floating point answers to an integer.
 
 ## Constraints
 
