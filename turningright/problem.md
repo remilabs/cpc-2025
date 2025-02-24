@@ -2,7 +2,7 @@
 
 Chuck is driving his truck through Grid City to reach his next roofing job. However, due to a broken turn signal, he can only turn right. As he waits in traffic, he wonders how many different routes he can take to reach his destination while following these rules:
 
-1. Each turn must bring him strictly closer to his destination than the previous turn.
+1. Each turn must bring him strictly closer to his destination than the previous turn. 
 2. His first turn must also move him closer to the destination than his starting position.
 3. Some intersections are blocked due to Grid City's ongoing Pi Day parade. Chuck cannot drive through or turn at these intersections.
 
@@ -21,7 +21,7 @@ The next N lines each contain two integers:
 
 x_i y_i — The coordinates of the i-th blocked intersection.
 
-It is guaranteed that Chuck’s starting location will never be a blocked intersection. Assume that Chuck's truck is oriented in whichever direction makes this task possible. For example, if he is in the first quadrant, his truck is pointed south, in the direction of the negative Y axis. If he begins in the second quadrant, he starts out driving east, in the direction of the positive X axis.
+It is guaranteed that Chuck’s starting location will never be a blocked intersection. Assume that Chuck's truck is oriented in whichever direction makes this task possible. For example, if he is in the first quadrant, his truck is pointed south, in the direction of the negative Y-axis. If he begins in the second quadrant, he starts out driving east, in the direction of the positive X-axis.
 
 ## Output Format
 
@@ -29,4 +29,4 @@ Output a single integer, which is the number of ways that Chuck can drive to his
 
 ## Constraints
 
-The constrains of X, Y, N, and each x_i, y_i are 0 < |X|, |Y|, |x_i|, |y_i| <= 150, 0 < |N| <= 10. For clarity, |X| denotes the absolute value of X.
+The constraints of X, Y, N, and each x_i, y_i are 0 < |X|, |Y|, |x_i|, |y_i| <= 150, 0 < N <= 10. For clarity, |X| denotes the absolute value of X.
