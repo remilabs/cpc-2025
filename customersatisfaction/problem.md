@@ -1,6 +1,6 @@
 ## Problem Statement
 
-Remi works hard to ensure roofing contractors have work to do and homeowners have someone to work on their roofs. Contractors have a maximum number of jobs they can do at once. Contractors are also limited to homes located within their market. Homeowners have specific contractors they prefer to work with. If a preferred contractor can work on a customer's home, that customer is satisfied.
+Remi works hard to ensure roofing contractors have work to do and homeowners have someone to work on their roofs. Contractors have a maximum number of jobs they can do at once. Contractors are also limited to homes located within their market. Homeowners have specific contractors they prefer to work with. If a preferred contractor can work on a customer's home, that customer is satisfied. Contractors can only do 1 job for each homeowner they can service, and homeowners only have 1 job that needs to be done on their home.
 
 Assuming all homeowners have work to be done on their roofs, what's the maximum number of satisfied customers Remi can achieve based on these constraints?
 
@@ -24,7 +24,7 @@ Output the maximum number of homes that can be serviced as a single integer.
 
 0 <= N<sub>i</sub> <= M
 
-0 <= C, H <= N * M
+0 <= C, H <= N \* M
 
 ## Time Limit
 
