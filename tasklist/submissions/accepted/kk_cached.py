@@ -1,38 +1,30 @@
 # import functools
 import sys
 
-sys.setrecursionlimit(10**6)
+sys.setrecursionlimit(10**5)
 
 n, m = map(int, input().split())
 
-task_times = {i: int(input()) for i in range(n)}
-task_graph = {i: [] for i in range(n)}
-is_sink = {i: True for i in range(n)}
-
+task_times = [int(input()) for _ in range(n)]
+task_graph = [[] for _ in range(n)]
 for _ in range(m):
     ai, bi = map(int, input().split())
     task_graph[bi].append(ai)
-    is_sink[ai] = False
 
-
-cache = {}
-
+cache = [-1] * n
 
 def dfs(v):
-    if len(task_graph[v]) == 0:
-        return task_times[v]
-    path_totals = []
+    if cache[v] != -1:
+        return cache[v]
+    m = 0
     for c in task_graph[v]:
-        if c not in cache:
-            pt = dfs(c)
-            cache[c] = pt
-        path_totals.append(cache[c] + task_times[v])
-    return max(path_totals)
+        m = max(m, dfs(c))
+    cache[v] = m + task_times[v]
+    return cache[v]
 
 
-totals = []
+m = 0
 for i in range(n):
-    if is_sink[i]:
-        totals.append(dfs(i))
+    m = max(m, dfs(i))
 
-print(max(totals))
+print(m)
