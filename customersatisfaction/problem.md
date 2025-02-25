@@ -24,9 +24,7 @@ Output the maximum number of homes that can be serviced as a single integer.
 
 0 <= N<sub>i</sub> <= M
 
-0 <= C <= N<sup>2</sup>
-
-0 <= H <= N * M
+0 <= C, H <= N * M
 
 ## Time Limit
 
