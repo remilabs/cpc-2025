@@ -12,7 +12,7 @@ class Graph:
           stack.append(ind)
           v[ind] = True
           parent[ind] = u
-    return Fal
+    return False
 
   def __init__(self, size):
     self.adj_matrix = [[0] * size for _ in range(size)]
