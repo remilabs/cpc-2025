@@ -1,3 +1,4 @@
+#!/bin/bash
 for path in ./*; do
   [ ! -d "$path" ] && continue
   echo ">>>>>>>>>>>>>>> Running on $path"
