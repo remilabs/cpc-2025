@@ -2,8 +2,8 @@
 
 Chuck is driving his truck through Grid City to reach his next roofing job. However, due to a broken turn signal, he can only turn right. As he waits in traffic, he wonders how many different routes he can take to reach his destination while following these rules:
 
-1. Each turn must bring him strictly closer to his destination than the previous turn. 
-2. His first turn must also move him closer to the destination than his starting position.
+1. Each turn must happen strictly closer to his destination than the previous turn. For example, if he makes a turn at (3, 4), he is at a distance of 5, and his next turn must be at a distance less than 5.
+2. His first turn must also be strictly closer to the destination than his starting position.
 3. Some intersections are blocked due to Grid City's ongoing Pi Day parade. Chuck cannot drive through or turn at these intersections.
 
 The city is modeled as a coordinate plane, where each intersection is represented by integer coordinates. Chuck's destination is always at the origin (0, 0).
