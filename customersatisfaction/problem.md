@@ -20,10 +20,13 @@ Output the maximum number of homes that can be serviced as a single integer.
 
 ## Constraints
 
-1 <= N,M <= 500<br/>
-0 <= N<sub>i</sub> <= M<br/>
-0 <= C <= N<sup>2</sup><br/>
-0 <= H <= M<sup>2</sup><br/>
+1 <= N <= 20, 1 <= M <= 150
+
+0 <= N<sub>i</sub> <= M
+
+0 <= C <= N<sup>2</sup>
+
+0 <= H <= N * M
 
 ## Time Limit
 
