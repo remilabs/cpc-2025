@@ -4,7 +4,7 @@ import math
 def solve():
     h, w = map(int, input().split())
     hh, ww = map(int, input().split())
-    oh, ow = h, w
+    ch,cw = h,w
     count = 0
     while h > hh or w > ww:
         if h > hh:
@@ -13,9 +13,7 @@ def solve():
         if w > ww:
             w = math.ceil(w / 2)
             count += 1
-        h, w = max(h, w), min(h, w)
-    h, w = oh, ow
-    hh, ww = ww, hh
+    h, w = cw, ch
     count2 = 0
     while h > hh or w > ww:
         if h > hh:
