@@ -7,7 +7,7 @@ typedef vector<vi> vvi;
 typedef tuple<int,int> ii;
 typedef vector<ii> vii;
 
-int s = 10;
+int s = 4;
 int xx,yy,n;
 
 using namespace std;
@@ -53,13 +53,13 @@ vii parents(int x, int y, vvi &blocked) {
     if (x >= s && y > s) {
         per(i, x, 0) {
             if (blocked[i][y]) break;
-            if (i < s - x - 1) res.push_back({i, y});
+            if (i < 2 * s - x) res.push_back({i, y});
         }
     }
     if (x < s && y >= s) {
         per(i, y, 0) {
             if (blocked[x][i]) break;
-            if (i < s - y - 1) res.push_back({x, i});
+            if (i < 2 * s - y) res.push_back({x, i});
         }
     }
     if (x <= s && y < s) {
@@ -77,10 +77,11 @@ vii parents(int x, int y, vvi &blocked) {
     return res;
 }
 int main() {
+    int q = s*2;
     cin >> xx >> yy >> n;
-    int x = xx, y = yy;
     vvi a(s*2+2, vi(s*2+2, 0));
     vvi blocked(s*2+2, vi(s*2+2, 0));
+    vector<bool> visited(q*q, false);
 
     rep(i,0, s*2+2) {
         a[i][s] = 1;
@@ -93,18 +94,21 @@ int main() {
         blocked[x+s][y+s] = 1;
     }
 
-    for (auto [x, y] : parents(s+2,s+2,blocked)) {
-        cout << x << " " << y << endl;
-    }
-
     for (auto [x, y] : spiral()) {
+        int v = x*q + y;
+        if (visited[v]) continue;
+        visited[v] = true;
+        cout << x - s << " " << y - s << endl;
         if (blocked[x][y]) continue;
         for (auto [px, py] : parents(x, y, blocked)) {
             a[px][py] += a[x][y];
             a[px][py] %= 1000000007;
         }
     }
+    rep(i,0, q*q) {
+        cout << visited[i] << " " << i / s << " " << i % s << endl;
+    }
 
-    cout << a[x+s][y+s] << endl;
+    cout << a[xx+s][yy+s] << endl;
     return 0;
 }
