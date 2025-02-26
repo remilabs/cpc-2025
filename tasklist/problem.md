@@ -2,7 +2,7 @@
 
 Jane manages all the roofers in Grid City. Roofing projects require many separate tasks to be coordinated in the correct order relative to each other. For example, the task of "Obtain a permit" must be completed before the task "Schedule the work". She knows how long each task will take from start to completion, and she knows which tasks depend on which other tasks to be finished first.
 
-Jane's team is large, meaning that all of a project's unblocked tasks can be worked on concurrently. If all of a task's dependencies are completed, someone on the team will start working on the task. If a task does not depend on any other task, it can be started immediately. She wants to know how long it will take to complete a project, given that each task will be started as soon as its dependencies are completed, and each task will take as long as she estimates.
+Jane's team is large, meaning that all of a project's unblocked tasks can be worked on concurrently. As soon as all of a task's dependencies are completed, someone on the team will start working on the task. If a task does not depend on any other task, it can be started immediately. She wants to know how long it will take to complete a project, given that each task will be started as soon as its dependencies are completed, each task will take as long as she estimates, and her team is large enough to work on all unblocked tasks concurrently without any increase in time to complete each task.
 
 ## Input Format
 

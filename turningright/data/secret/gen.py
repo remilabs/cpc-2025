@@ -1,8 +1,9 @@
 from random import randint
-n = 10000
-print(500,500,10000)
+n = 2000
+m = 200
+print(m,m,n)
 b = set()
-r = lambda: randint(1,499) * [-1, 1][randint(0,1)]
+r = lambda: randint(1,m-1) * [-1, 1][randint(0,1)]
 while len(b) < n:
   b.add((r(),r()))
 for t in b:

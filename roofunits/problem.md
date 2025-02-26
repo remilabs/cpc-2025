@@ -28,7 +28,7 @@ For example, if the query looks like the following
 You will output
 
 ```txt
-42.5
+43
 ```
 
 And if the query looks like
@@ -40,12 +40,12 @@ And if the query looks like
 You will output
 
 ```txt
-7/12
+8/12
 ```
 
-For degrees, round any floating point answers to the nearest tenth in your output
+For degrees, round any floating point answers to the nearest integer in your output.
 
-For rise/run, truncate any floating point answers to an integer.
+For rise/run, round any floating point numerators to the nearest integer.
 
 ## Constraints
 

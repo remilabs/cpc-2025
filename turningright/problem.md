@@ -4,7 +4,7 @@ Chuck is driving his truck through Grid City to reach his next roofing job. Howe
 
 1. Each turn must happen strictly closer to his destination than the previous turn. For example, if he makes a turn at (3, 4), he is at a distance of 5, and his next turn must be at a distance less than 5.
 2. His first turn must also be strictly closer to the destination than his starting position.
-3. Some intersections are blocked due to Grid City's ongoing Pi Day parade. Chuck cannot drive through or turn at these intersections.
+3. Some intersections may be blocked due to Grid City's ongoing Pi Day parade. Chuck cannot drive through or turn at these intersections.
 
 The city is modeled as a coordinate plane, where each intersection is represented by integer coordinates. Chuck's destination is always at the origin (0, 0).
 
@@ -25,8 +25,8 @@ It is guaranteed that Chuck’s starting location will never be a blocked inters
 
 ## Output Format
 
-Output a single integer, which is the number of ways that Chuck can drive to his next job. Since this number can get quite large, output the answer modulo 1,000,000,007. It is guaranteed that there will be at least one way for Chuck to get to his destination.
+Output a single integer, the number of ways that Chuck can drive to his next job. Since this number can get quite large, output the answer modulo 1,000,000,007. It is guaranteed that there will be at least one way for Chuck to get to his destination.
 
 ## Constraints
 
-The constraints of X, Y, N, and each x_i, y_i are 0 < |X|, |Y|, |x_i|, |y_i| <= 500, 0 < N <= 10,000. For clarity, |X| denotes the absolute value of X.
+The constraints of X, Y, N, and each x_i, y_i are 1 <= |X|, |Y|, |x_i|, |y_i| <= 200, 0 <= N <= 2,000. For clarity, |X| denotes the absolute value of X.
