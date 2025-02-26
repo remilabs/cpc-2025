@@ -7,7 +7,7 @@ typedef vector<vi> vvi;
 typedef tuple<int,int> ii;
 typedef vector<ii> vii;
 
-int s = 4;
+int s = 101;
 int xx,yy,n;
 
 using namespace std;
@@ -98,15 +98,11 @@ int main() {
         int v = x*q + y;
         if (visited[v]) continue;
         visited[v] = true;
-        cout << x - s << " " << y - s << endl;
         if (blocked[x][y]) continue;
         for (auto [px, py] : parents(x, y, blocked)) {
             a[px][py] += a[x][y];
             a[px][py] %= 1000000007;
         }
-    }
-    rep(i,0, q*q) {
-        cout << visited[i] << " " << i / s << " " << i % s << endl;
     }
 
     cout << a[xx+s][yy+s] << endl;
