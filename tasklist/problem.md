@@ -23,6 +23,6 @@ Output the time it will take to complete the given project as an integer.
 0 < N <= 100_000
 0 <= M <= 500_000
 
-Each task has a positive integer time of less than 10,000.
+Each task has a positive integer time of less than or equal to 10,000.
 
 It will always be possible to complete a project, so no two tasks will depend on each other to be completed.
