@@ -29,4 +29,4 @@ Output a single integer, which is the number of ways that Chuck can drive to his
 
 ## Constraints
 
-The constraints of X, Y, N, and each x_i, y_i are 0 < |X|, |Y|, |x_i|, |y_i| <= 150, 0 < N <= 10. For clarity, |X| denotes the absolute value of X.
+The constraints of X, Y, N, and each x_i, y_i are 0 < |X|, |Y|, |x_i|, |y_i| <= 500, 0 < N <= 10,000. For clarity, |X| denotes the absolute value of X.
