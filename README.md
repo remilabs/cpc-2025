@@ -14,7 +14,9 @@
 - Do not use any LLM (GitHub Copilot, ChatGPT, etc)
 - Using internet to look up syntax questions and documentation is fine
 - Copy + pasting book code is okay (KACTL or other previously written code)
-- Contestants may ask clarifications in
+- Contestants may ask clarifications in Hackerrank
+- Raise your hand or email josh@remihq.com if you have difficulties with the contest
+- Supported languages: C, C#, C++, Go, Java, JavaScript, Kotlin, Python3, Rust, TypeScript
 
 ### Prizes
 - Money - [Fill in amounts]
