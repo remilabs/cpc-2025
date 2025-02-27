@@ -19,7 +19,6 @@
 ### Prizes
 - Money - [Fill in amounts]
 - Remi swag
-- 
 
 ### Strategy
 - Solve the easiest problems first
